@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ArtistVM>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <th>@item.Id</th>
+            <td>@item.Name</td>
+
+        </tr>
+        }
+    </tbody>
+</table>
